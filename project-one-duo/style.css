@@ -1,10 +1,49 @@
 @charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400&display=swap');
 
+* {
+    margin: 0;
+    border: 0;
+    padding: 0;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-weight: 300;
+}
 h1{
     text-align: center;
     color: white;
+    
 }
-
+/*Tá com um bug no gradient, ao aumentar muito o zoom, tem que arrumar isso （＞人＜；)*/
 body {
+    height: 100vh;
     background: linear-gradient(107.56deg, #00AEE4 0%, #00698A 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.menu-row-margin {
+    margin: 64px 0px;
+    
+}
+.menu-option {
+    width: 125px;
+    height: 100px;
+    background-color: #00779C;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 13px;
+    transition-duration: 0.1s;  
+}
+.menu-option:hover {
+    box-shadow: 5px 5px rgba(0, 0, 0, 0.356);
+}
+.row {
+    display: flex;
+    justify-content: center;
+}
+#menu-left {
+    margin-right: 31px;
 }

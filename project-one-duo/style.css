@@ -1,5 +1,12 @@
 @charset "UTF-8";
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400&display=swap');
+html, body{
+    min-height:100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
 
 * {
     margin: 0;
@@ -13,14 +20,13 @@ h1{
     color: white;
     
 }
-/*Tá com um bug no gradient, ao aumentar muito o zoom, tem que arrumar isso （＞人＜；)*/
+/*Tá com um bug no gradient, ao aumentar muito o zoom, tem que arrumar isso （＞人＜；)
+> Foi, faltava um background-repeat: no-repeat e um background-attachment: fixed; Vou deixar aqui registrado. Também tava com um bug de cortar os itens quando dava zoom, isso foi arrumado usando min-height:100% no html e body, colocando o flex no html e colocando height:100% no body*/
 body {
-    height: 100vh;
+    height: 100%;
     background: linear-gradient(107.56deg, #00AEE4 0%, #00698A 100%);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 }
 .menu-row-margin {
     margin: 64px 0px;

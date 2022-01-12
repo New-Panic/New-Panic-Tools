@@ -7,6 +7,7 @@ function convertToF() {
 
   function createHtml() {
     const resultDiv = document.querySelector(".result-div");
+    //Ok, tu fez commit, mas esqueceu tudo do básico né? Hierarquia de tags foi pro lixo, lembra que estilo é no css, não existe h1 letra grande h6 letra pequena. Dá um jeito nisso. ~(>_<。)＼
     const result = document.createElement("h1");
     result.classList.add("result-text");
     resultDiv.classList.add("menu-row-margin");

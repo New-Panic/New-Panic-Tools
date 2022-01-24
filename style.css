@@ -1,5 +1,5 @@
 @charset "UTF-8";
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400&display=swap');
+
 * {
     margin: 0;
     border: 0;
@@ -40,6 +40,7 @@ body {
     border-radius: 5px;
     font-size: 13px;
     transition-duration: 0.1s;  
+    margin: 0px 16px 0px 16px;
 }
 .menu-option:hover {
     box-shadow: 5px 5px rgba(0, 0, 0, 0.356);
@@ -47,9 +48,6 @@ body {
 .row {
     display: flex;
     justify-content: center;
-}
-#menu-left {
-    margin-right: 31px;
 }
 a:hover, a:visited, a{
     text-decoration: none;
